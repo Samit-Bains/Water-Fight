@@ -131,7 +131,8 @@ function update() {
     } else if( joystick.left() ){
         dog.moveLeft();
         //player.position.x = player.position.x - 60 * frameTime;
-    } else if( joystick.up() ){
+    }  
+    if( joystick.up() ){
         dog.moveUp();
         //player.position.y = player.position.y + 60 * frameTime;
     } else if( joystick.down() ){
@@ -145,7 +146,8 @@ function update() {
         dog.moveUp();
     } else if (cursors.down.isDown) {
         dog.moveDown();
-    } else if (cursors.left.isDown) {
+    } 
+    if (cursors.left.isDown) {
         dog.moveLeft();
     } else if (cursors.right.isDown) {
         dog.moveRight();
@@ -155,7 +157,8 @@ function update() {
         dog.playWalkAnimation();
     } else if (cursors.down.downDuration(1)) {
         dog.playWalkAnimation();
-    } else if (cursors.left.downDuration(1)) {
+    } 
+    if (cursors.left.downDuration(1)) {
         dog.playWalkAnimation();
     } else if (cursors.right.downDuration(1)) {
         dog.playWalkAnimation();
